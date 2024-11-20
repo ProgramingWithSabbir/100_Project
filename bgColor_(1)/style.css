@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+:root {
+  --primary-color: #41bab1 !important;
+  --secondary-color: #212529 !important;
+  --white-color: #faf8f6;
+  --hover-primary: #118b83;
+  --paragraph-secondary-color: #41495d;
+  --accent-color: #2f374e;
+  --gray-color: #99d6d1;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  background-color: var(--white-color);
+}
+.text-gray {
+  color: var(--gray-color);
+}
+.bg-gray {
+  background-color: var(--gray-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.bg-accent {
+  background-color: var(--accent-color);
+}
+.text-theme {
+  color: var(--primary-color);
+}
+.text-theme-secondary {
+  color: var(--secondary-color);
+}
+.bg-theme-secondary {
+  background-color: var(--secondary-color);
+}
+.bg-theme {
+  background-color: var(--primary-color);
+  border: none;
+}
+.text-paragraph-secondary-color {
+  color: var(--paragraph-secondary-color);
+}
+.container {
+  padding: 0 12px;
+}
+.p-head {
+  padding: 8px 0;
+}
+.custom-logo {
+  width: 108px;
+  display: flex;
+  gap: 1px;
+  background-color: #2e394e;
+  color: #ffffff;
+  align-items: center;
+  padding: 2px 12px 4px;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.custom-logo-first-ch {
+  position: relative;
+  font-size: 37px;
+  margin-bottom: 0;
+}
+.custom-logo-second-ch {
+  position: relative;
+  width: 100%;
+}
+.custom-logo-second-ch h6 {
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+  position: absolute;
+  width: 100%;
+  top: -15px;
+}
+.custom-logo-second-ch h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0 !important;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+}
+.nav {
+  padding-top: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  z-index: 1;
+}
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 600;
+  font-size: 1.01rem;
+  text-transform: uppercase;
+}
+.nav-ul li a {
+  color: rgba(0, 0, 0, 0.699);
+}
+.active {
+  color: var(--primary-color) !important;
+}
+.absolute-ring {
+  position: absolute;
+  top: 0;
+  left: -9rem;
+  width: 20rem;
+  height: 50vh;
+  z-index: -99;
+}
+.absolute-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  height: 100vh;
+  background-color: #41bab28d;
+  border-bottom-left-radius: 50%;
+  z-index: -99;
+}
+.dot {
+  width: 0.6rem;
+  height: 0.7rem;
+  display: inline-block;
+  background-color: var(--secondary-color);
+}
+.search-container {
+  transition: transform 0.4s ease-in;
+}
+.search-container:hover {
+  transform: translateY(-5px);
+}
+.hero-second-lay {
+  transition: transform 0.4s ease-in;
+}
+.hero-second-lay:hover {
+  transform: translateY(-5px);
+}
+.hero-section {
+  margin-top: 3rem !important;
+}
+.rounded-circle {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+.rounded-circle img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15rem;
+  object-fit: fill;
+}
+.border-ring {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  display: block;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 0 0 0.5 red;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+}
+.search-container input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 2rem 2.3rem 2rem 1rem;
+  outline: none;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0px 5px 30px #42427a69;
+}
+.search-container input:placeholder-shown {
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.701);
+  font-size: 0.9rem;
+}
+.search-container button {
+  padding: 0.8rem 2rem;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+.search-container button:hover {
+  background-color: var(--hover-primary);
+}
+.pg-container {
+  position: relative;
+}
+.pg-container img {
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+}
+.language-more {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: 8;
+  position: absolute;
+  top: 0;
+  left: 279px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.recommended {
+  margin-top: 2rem !important;
+  font-weight: bolder;
+  background-image: url("https://rabbil.com/build/assets/section-title-bg-46a79d17.svg");
+  background-repeat: no-repeat;
+}
+.recommended div img {
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+}
+.recommended div div p {
+  color: rgba(58, 58, 58, 0.743);
+  font-weight: 500;
+}
+.cards {
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.279);
+}
+.cards:hover {
+  margin-top: -1rem;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+}
+.heading {
+  margin-top: 1rem !important;
+  font-weight: bolder;
+}
+/* কারাউজেল কন্ট্রোলের জন্য */
+.carousel-controls {
+  top: 10px;
+  right: 10px;
+}
+
+/* Custom Card Styling */
+.custom-card {
+  width: 20rem;
+  height: 25rem;
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: -25rem;
+  transform: translateY(-50%);
+  border-radius: 8px;
+}
+.pg-container img {
+  transition: transform 0.3s ease;
+}
+
+.pg-container img:hover {
+  transform: translateY(-10px);
+}
+.footer {
+  background-color: #99d6d1;
+}
+.carosual-card div {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.carosual-card div h1 {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.carosual-card div h4 {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.carosual-card div p {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-weight: normal;
+}
