@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 30vw;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+      }
+      .counter-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .counter {
+        color: green;
+      }
+      textarea {
+        padding: 1rem;
+        border: 1px solid green;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Text Counter Basic</h1>
+
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Enter Value"
+        class="textarea"
+      ></textarea>
+
+      <div class="counter-container">
+        <h2>Count Text Length</h2>
+        <h1 class="counter">0</h1>
+      </div>
+    </div>
+
+    <script>
+      const textarea = document.querySelector(".textarea");
+      const counter = document.querySelector(".counter");
+
+      textarea.addEventListener("keyup", () => {
+        const length = textarea.value.length;
+
+        counter.innerText = length;
+      });
+    </script>
+  </body>
+</html>
