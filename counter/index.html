@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="counter">0</h1>
+    <div class="btn-container">
+      <button class="prev">-</button> <button class="next">+</button>
+    </div>
+  </body>
+
+  <script>
+    let number = 0;
+    const counter = document.querySelector("h1");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+    counter.innerText = number;
+    next.addEventListener("click", () => {
+      counter.innerText = number++;
+    });
+    prev.addEventListener("click", () => {
+      if (number < 0) {
+        number = 0;
+      } else {
+        counter.innerText = number--;
+      }
+    });
+  </script>
+</html>
