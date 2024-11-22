@@ -26,9 +26,19 @@ Here is a sneak peek of some of the projects in this collection:
 1. **Project Name:** `Background Color`  
    ➡ [Link to Project](#)  
 
-2. **Project Name:** *(Basic Counter)*  
+2. **Project Name:** `Basic Counter`
    ➡ [Link to Project](#)  
-2. **Project Name:** *(Basic Text Counter)*  
+3. **Project Name:** `Basic Text Counter`
+   ➡ [Link to Project](#)
+4. **Project Name:** `Simple Message Display`
+   ➡ [Link to Project](#)
+5. **Project Name:** `Digital Clock`
+   ➡ [Link to Project](#)
+6. **Project Name:** `Basic Image Editor`
+   ➡ [Link to Project](#)
+7. **Project Name:** `Random Password Generator`
+   ➡ [Link to Project](#)
+7. **Project Name:** `According`
    ➡ [Link to Project](#)  
 ...
 
