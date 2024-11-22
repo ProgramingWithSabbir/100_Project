@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 30vw;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+      }
+      .input {
+        height: 30px;
+        border: 1px solid blue;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Send Your Message</h1>
+      <input type="text" class="input" id="message" />
+      <button class="submit">Submit</button>
+
+      <div>
+        <p class="mg-show"></p>
+      </div>
+    </div>
+    <script>
+      const message = document.querySelector("#message");
+      const mgShow = document.querySelector(".mg-show");
+      const submit = document.querySelector(".submit");
+
+      submit.addEventListener("click", () => {
+        const value = message.value;
+        mgShow.innerText = value;
+      });
+    </script>
+  </body>
+</html>
