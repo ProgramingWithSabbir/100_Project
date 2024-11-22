@@ -23,11 +23,13 @@ Whether you're a beginner or an experienced developer, you'll find something val
 
 Here is a sneak peek of some of the projects in this collection:  
 
-1. **Project Name:** `Unique Password Generator`  
+1. **Project Name:** `Background Color`  
    ➡ [Link to Project](#)  
 
-2. **Project Name:** *(Add your projects here)*  
-
+2. **Project Name:** *(Basic Counter)*  
+   ➡ [Link to Project](#)  
+2. **Project Name:** *(Basic Text Counter)*  
+   ➡ [Link to Project](#)  
 ...
 
 **More projects coming soon! Stay tuned!** 🔔  
