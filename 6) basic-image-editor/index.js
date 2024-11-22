@@ -1,13 +1,17 @@
-const input = document.querySelectorAll(".form-control input");
+// Select all input controls
+const inputs = document.querySelectorAll(".form-control input");
 
-input.forEach((items) => items.addEventListener("change", update));
-input.forEach((items) => items.addEventListener("mousemove", update));
+// Add event listeners for change and mousemove
+inputs.forEach((input) => input.addEventListener("change", updateProperties));
+inputs.forEach((input) =>
+  input.addEventListener("mousemove", updateProperties)
+);
 
-function update() {
-  const change = this.dataset.sizing || "";
-
+// Update CSS variables based on input values
+function updateProperties() {
+  const suffix = this.dataset.sizing || ""; // Get unit (e.g., px, %)
   document.documentElement.style.setProperty(
     `--${this.name}`,
-    this.value + change
+    this.value + suffix
   );
 }

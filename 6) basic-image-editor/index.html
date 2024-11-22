@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container">
-      <!-- left editor tools -->
+      <!-- Left Editor Tools -->
       <div>
-        <!-- change image width -->
+        <!-- Width Control -->
         <div class="form-control">
           <label for="width">Width</label>
           <input
@@ -23,38 +23,38 @@
             value="40"
           />
         </div>
-        <!-- change border radius -->
+        <!-- Border Radius -->
         <div class="form-control">
           <label for="border-radius">Border Radius</label>
           <input
             type="range"
             name="border-radius"
             id="border-radius"
-            data-sizing="px"
-            min="5"
+            min="0"
             max="100"
+            data-sizing="px"
             value="5"
           />
         </div>
-        <!-- change base color -->
+        <!-- Base Color -->
         <div class="form-control">
           <label for="base">Base Color</label>
-          <input type="color" name="base" id="base" value="red" />
+          <input type="color" name="base" id="base" value="#ff0000" />
         </div>
-        <!-- change padding -->
+        <!-- Padding -->
         <div class="form-control">
           <label for="padding">Padding</label>
           <input
             type="range"
             name="padding"
             id="padding"
-            min="5"
+            min="0"
             max="100"
-            value="5"
             data-sizing="px"
+            value="0"
           />
         </div>
-        <!-- change blur -->
+        <!-- Blur -->
         <div class="form-control">
           <label for="blur">Blur</label>
           <input
@@ -62,17 +62,58 @@
             name="blur"
             id="blur"
             min="0"
-            max="100"
-            value="0"
+            max="20"
             data-sizing="px"
+            value="0"
+          />
+        </div>
+        <!-- Brightness -->
+        <div class="form-control">
+          <label for="brightness">Brightness</label>
+          <input
+            type="range"
+            name="brightness"
+            id="brightness"
+            min="50"
+            max="200"
+            data-sizing="%"
+            value="100"
+          />
+        </div>
+        <!-- Saturation -->
+        <div class="form-control">
+          <label for="saturation">Saturation</label>
+          <input
+            type="range"
+            name="saturation"
+            id="saturation"
+            min="0"
+            max="200"
+            data-sizing="%"
+            value="100"
+          />
+        </div>
+        <!-- Contrast -->
+        <div class="form-control">
+          <label for="contrast">Contrast</label>
+          <input
+            type="range"
+            name="contrast"
+            id="contrast"
+            min="50"
+            max="200"
+            data-sizing="%"
+            value="100"
           />
         </div>
       </div>
-      <!-- right image preview -->
+
+      <!-- Right Image Preview -->
       <div class="image-container">
-        <img src="edit-image.jpg" alt="Image" />
+        <img src="edit-image.jpg" alt="Editable Image" />
       </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
