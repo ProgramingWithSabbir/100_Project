@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+:root {
+  --width: 40%;
+  --base: red;
+  --border-radius: 5px;
+  --blur: 0px;
+  --padding: 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: azure;
+  margin: auto;
+  padding: 1rem;
+}
+img {
+  width: var(--width);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  filter: blur(var(--blur));
+  background-color: var(--base);
+}
+.form-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.image-container {
+  overflow: hidden;
+}
